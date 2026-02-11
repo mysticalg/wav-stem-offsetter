@@ -130,3 +130,9 @@ These are ignored by .gitignore.
 StemOffsetGUI.py   # Main application
 README.md          # Documentation
 .gitignore
+```
+
+Screenshot:
+
+<img width="722" height="718" alt="python_z8VYZhNxko" src="https://github.com/user-attachments/assets/57a2396b-654c-4aa3-b635-6d35acb053e2" />
+
