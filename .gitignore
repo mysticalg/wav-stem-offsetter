@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.so
+*.dll
+*.lib
+*.exe
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtualenv
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Demucs outputs / temp
+stems_out/
+renders/
+demucs_out/
+*.wav
+
+# PyInstaller
+*.spec
