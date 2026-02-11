@@ -51,16 +51,16 @@ Open PowerShell inside the project folder.
 py -3.12 -m venv .venv
 .\.venv\Scripts\activate
 python -m pip install -U pip setuptools wheel
-
+```
 2️⃣ Install dependencies
 
 Install PyTorch FIRST (CPU version works everywhere):
-
+```
 pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
-
+```
 
 Then install remaining packages:
-
+```
 pip install PySide6 demucs soundfile numpy
 
 3️⃣ (Optional but Recommended) Install FFmpeg
@@ -68,14 +68,15 @@ pip install PySide6 demucs soundfile numpy
 Some audio operations rely on FFmpeg.
 
 winget install Gyan.FFmpeg
-
+```
 
 Restart PowerShell afterwards.
 
 ▶️ Running the App
+```
 .\.venv\Scripts\activate
 python StemOffsetGUI.py
-
+```
 🧭 Usage Guide
 
 Launch the application
@@ -98,9 +99,9 @@ Demucs TorchAudio / TorchCodec Errors
 Newer TorchAudio versions sometimes require TorchCodec.
 
 Possible fixes:
-
+```
 Install torchcodec and FFmpeg shared builds
-
+```
 OR downgrade Torch/TorchAudio to avoid TorchCodec requirement
 
 NumPy Import Errors
@@ -111,12 +112,12 @@ Importing the numpy C-extensions failed
 
 
 Fix:
-
+```
 deactivate
 Remove-Item -Recurse -Force .venv
 py -3.12 -m venv .venv
 .\.venv\Scripts\activate
-
+```
 
 Reinstall dependencies.
 
@@ -130,7 +131,7 @@ These are ignored by .gitignore.
 StemOffsetGUI.py   # Main application
 README.md          # Documentation
 .gitignore
-```
+
 
 Screenshot:
 
